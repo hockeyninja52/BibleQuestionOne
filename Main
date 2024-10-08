@@ -1,0 +1,30 @@
+package bq1;
+import java.util.Scanner;
+import static java.lang.Math.log;
+import static java.lang.Math.pow;
+
+public class Main {
+
+	public static void main(String[] args) {
+		double P = 770000000;
+		double q = 0;
+		double x = 0;
+		double s = 0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("QUESTION 1");
+		System.out.println("7.7 Billion = 13 * 3^x");
+		q = P/13;
+		System.out.println(q + " = 3^x");
+		x = (log(q) / log(3) * 3);
+		System.out.println("It will take " + x + " years");
+		
+		System.out.println("QUESTION 1");
+		System.out.println("50 years = 3((log 7.7 B / 13) / log(x))");
+		s = 50/3;
+		q = log(P) / 13;		
+		x = Math.pow(10, q/s);
+		System.out.println(x + " diciples will have to be trained in order to train 7.7 billion people in 50 years");
+	}
+	
+	
+}
